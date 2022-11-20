@@ -9,6 +9,7 @@ export default function Shop() {
       <div className="ShopHeader">
         <Header />
       </div>
+      <section></section>
       <Footer />
     </>
   );
