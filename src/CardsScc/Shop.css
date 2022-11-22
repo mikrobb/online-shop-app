@@ -1,3 +1,100 @@
 .ShopHeader{
     background-color: #4b4b4b;
 }
+
+.mainSectionBlocks{
+    display: flex;
+    justify-content: space-between;   
+    margin-top: 40px;
+}
+
+.Categories{
+    margin-left: 20px;
+}
+
+.titleBlock{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.inpBlock{
+    margin-bottom: 10px;
+}
+
+.inpBlock label{
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    outline: none;
+    margin-right: 5px;
+  
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+  }
+  
+  input:checked {
+    border: 6px solid black;
+  }
+
+.unitBlocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+}
+
+.unitBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    text-align: center;
+    margin-left: 15px;
+    margin-bottom: 80px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+}
+
+.unitBlock img {
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.nameProduct{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    height: 45px;
+}
+
+
+.priceProduct{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.blackLinks{
+    text-decoration: none;
+    color: black;
+}
+
+.blackLinks:hover{
+    color: gray;
+    transition: 0.2s;
+}
