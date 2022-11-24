@@ -2,10 +2,9 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import "../CardsScc/Shop.css";
-import { stafArr } from "../imports";
 import { Link } from "react-router-dom";
 
-export default function Shop() {
+export default function Shop(stafArr) {
   return (
     <>
       <div className="ShopHeader">
@@ -88,7 +87,7 @@ export default function Shop() {
             </div>
           </div>
           <div className="unitBlocks">
-            {stafArr.map((unit) => (
+            {stafArr.stafArr.map((unit) => (
               <div className="unitBlock">
                 <img src={unit.img1} alt="" />
                 <span className="nameProduct">
