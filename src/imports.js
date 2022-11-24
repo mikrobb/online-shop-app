@@ -1,6 +1,8 @@
+import uniqid from "uniqid";
+
 export let stafArr = [
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "Accessories",
     name: "Vintage Louis Vuitton Monogram Fold Purse",
     actual: "In Stock",
@@ -11,7 +13,7 @@ export let stafArr = [
     info: "Vintage Louis Vuitton Monogram fold purse, 100% authentic, very minimal use.",
   },
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "Bags",
     name: "Vintage 90s Tommy Hilfiger Big Flag Backpack",
     actual: "In Stock",
@@ -22,7 +24,7 @@ export let stafArr = [
     info: "Vintage 90s Tommy Hilfiger big flag backpack, mark to front should wash off.",
   },
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "Bottoms",
     name: "Dark Denim End X Levi's 505 Regular Selvedge Jeans ",
     actual: "In Stock",
@@ -36,7 +38,7 @@ export let stafArr = [
     parametrs: '32" Waist - 32" Inside Leg',
   },
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "Dresses",
     name: "Vintage 1990s Versace Jeans Couture Velour Long Sleeve Dress",
     actual: "In Stock",
@@ -51,7 +53,7 @@ export let stafArr = [
     parametrs: '18" Pit to pit - 15" Waist - 34" Length - 18" Armpit to cuff',
   },
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "Fleeces",
     name: "Vintage Womens Blue Reebok Fitness Fleece Jacket",
     actual: "In Stock",
@@ -64,7 +66,7 @@ export let stafArr = [
     parametrs: '19" Pit to pit - 24" Collar to hem',
   },
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "Gilets",
     name: "Vintage Dark Grey Kangol Puffer Gilet",
     actual: "In Stock",
@@ -77,7 +79,7 @@ export let stafArr = [
     parametrs: '22" Pit to pit - 26" Collar to hem',
   },
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "Hats",
     name: "Vintage 90s Navy Polo Sport Youth Bucket Hat",
     actual: "In Stock",
@@ -89,7 +91,7 @@ export let stafArr = [
     parametrs: 'Fits Small (6.75" Diameter)',
   },
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "Jackets",
     name: "Vintage 90s Adidas Planet Big Logo Track Jacket",
     actual: "In Stock",
@@ -103,7 +105,7 @@ export let stafArr = [
     parametrs: '26" Pit to pit - 29" Collar to hem',
   },
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "Polo Shirts",
     name: "Vintage 90s Nike Jordan Abstract Print L/S Polo Shirt",
     actual: "In Stock",
@@ -116,7 +118,7 @@ export let stafArr = [
     parametrs: '22" Pit to pit - 25" Collar to hem',
   },
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "Quater Zips",
     name: "Vintage 90s Orange Polo Sport Hooded Poncho",
     actual: "In Stock",
@@ -129,7 +131,7 @@ export let stafArr = [
     parametrs: '25" Pit to pit - 26" Collar to hem',
   },
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "Scarfs",
     name: "Vintage Tweed Burberry Nova Check Cashmere Scarf",
     actual: "In Stock",
@@ -139,7 +141,7 @@ export let stafArr = [
     info: "Vintage Tweed Burberry Nova Check Cashmere Scarf.",
   },
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "Shirts",
     name: "Vintage Tan Burberry Nova Check L/S Shirt",
     actual: "In Stock",
@@ -151,7 +153,7 @@ export let stafArr = [
     parametrs: '24.5" Pit to pit - 28" Collar to hem',
   },
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "Shoes",
     name: "Nike Air Jordan 1 OG Handcrafted DSWT UK8",
     actual: "In Stock",
@@ -165,7 +167,7 @@ export let stafArr = [
     parametrs: "Uk 8",
   },
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "Sweatshirts",
     name: "Baby Blue Ralph Lauren Hoody",
     actual: "In Stock",
@@ -177,7 +179,7 @@ export let stafArr = [
     parametrs: '24" Pit to pit - 27" Collar to hem',
   },
   {
-    id: parseInt(Math.random(new Date().getMilliseconds()) * 1000),
+    id: uniqid(),
     categoria: "T-Shirts",
     name: "Vintage 1998 World Cup England Bully T-Shirt",
     actual: "In Stock",

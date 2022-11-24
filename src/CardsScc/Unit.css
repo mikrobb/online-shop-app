@@ -1,0 +1,22 @@
+.ShopHeader{
+    background-color: #4b4b4b;
+}
+
+.infoUnit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ImgBlocks{
+    display: flex;
+    align-items: center;
+}
+
+.blockImg{
+    width: 300px;
+}
+
+.blockMainImg{
+    width: 600px;
+}
