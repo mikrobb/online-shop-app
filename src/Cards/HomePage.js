@@ -8,8 +8,8 @@ import block4 from "../img/Block4.png";
 import block5 from "../img/Block5.png";
 import block6 from "../img/Block6.png";
 
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./CardsHtml/Header";
+import Footer from "./CardsHtml/Footer";
 
 export default function HomePage() {
   return (

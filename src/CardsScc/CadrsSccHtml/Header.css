@@ -1,0 +1,32 @@
+.links{
+    text-decoration: none;
+    color: white;
+}
+
+.Header_main_block{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+}
+
+.Header_block{
+    display: flex;
+    align-items: center;
+}
+
+.Header_span{
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+.Header_span:hover{
+    cursor: pointer;
+    color: gray;
+    transition-duration: 0.2s;
+}
+
+.Title_span{
+    font-size: 30px;
+}

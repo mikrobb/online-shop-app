@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "C:/Users/Mikrob/Desktop/Online shop project/streetwear-shop-appnpx/src/CardsScc/CadrsSccHtml/Header.css";
 
 export default function Header() {
   return (
