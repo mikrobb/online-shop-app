@@ -1,5 +1,6 @@
 import React from "react";
 import "../CardsScc/HomePage.css";
+import { Link } from "react-router-dom";
 
 import block1 from "../img/Block1.png";
 import block2 from "../img/Block2.png";
@@ -16,7 +17,9 @@ export default function HomePage() {
     <>
       <header className="Slider_block">
         <Header />
-        <div className="Btn_shop">SHOP NOW</div>
+        <Link className="linksHomePage" to="/shop">
+          <div className="Btn_shop">SHOP NOW</div>
+        </Link>
       </header>
 
       <h2 className="Arr_block_title">NEW ARRIVALS</h2>
@@ -67,8 +70,9 @@ export default function HomePage() {
           <span className="Price_Sale">$31.00</span>
         </div>
       </section>
-
-      <div className="Btn_shop_View">VIEW ALL</div>
+      <Link className="linksHomePage" to="/shop">
+        <div className="Btn_shop_View">VIEW ALL</div>
+      </Link>
       <div className="Slider_Block_Second"></div>
 
       <section>

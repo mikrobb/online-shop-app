@@ -67,6 +67,11 @@
     margin-top: 20px;
 }
 
+.linksHomePage{
+    color: white;
+    text-decoration: none;
+}
+
 .Btn_shop_View{
     border: 1px solid black;
     width: 150px;

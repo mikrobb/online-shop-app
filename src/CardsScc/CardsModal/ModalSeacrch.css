@@ -1,0 +1,73 @@
+.modal {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.modal.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal__content{
+    padding: 20px;
+    background-color: white;
+    width: 100vw;
+}
+
+.titleSearch{
+    font-size: 20px;
+}
+
+.inpSearch{
+    width: 95%;
+    height: 30px;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+
+.modalImg{
+    width: 120px;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.mainModalBlocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 96%;
+}
+
+.modalBlock{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.modalName{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.modalPrice{
+    font-size: 14px;
+}
+
+.modalLinks{
+    text-decoration: none;
+    color: black;
+}
+
+.modalLinks:hover{
+    color: gray;
+    transition: 0.4s;
+}
