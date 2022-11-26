@@ -28,7 +28,7 @@
     cursor: pointer;
 }
 
-input {
+.inpBlock input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -47,7 +47,7 @@ input {
     cursor: pointer;
   }
   
-  input:checked {
+  .inpBlock input:checked {
     border: 6px solid black;
   }
 
@@ -71,7 +71,7 @@ input {
 }
 
 .unitBlock img {
-    width: 400px;
+    width: 300px;
     border: 1px solid black;
     border-radius: 15px;
 }

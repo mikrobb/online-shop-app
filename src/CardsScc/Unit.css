@@ -4,19 +4,104 @@
 
 .infoUnit{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 50px;
 }
 
 .ImgBlocks{
     display: flex;
-    align-items: center;
+    margin-left: 50px;
 }
 
 .blockImg{
-    width: 300px;
+    width: 120px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.blockImgBorder{
+    display: none;
 }
 
 .blockMainImg{
-    width: 600px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.unitInfo{
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+.unitName{
+    font-size: 25px;
+    /* font-family: 'PT Sans', sans-serif; */
+}
+
+.inStock{
+    font-size: 12px;
+    color: rgb(27, 185, 27);
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.unitPrice{
+    font-size: 20px;
+}
+
+.Tax{
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.addBtn{
+    border: 1px solid #4b4b4b;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+    background-color: #4b4b4b;
+}
+
+.addBtn:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.aboutBlock{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.delailsBlock{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top: 1px solid gray;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.allInfoBlock{
+    border-top: 1px solid gray;
+    padding-top: 20px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 17px;
+}
+
+.parametrsUnit{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.continuation{
+    margin-top: 20px;
 }

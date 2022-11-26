@@ -1,11 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import { HashRouter } from "react-router-dom";
-import "./App.css";
 import HomePage from "./Cards/HomePage";
 import Shop from "./Cards/Shop";
 import Unit from "./Cards/Unit";
-import uniqid from "uniqid";
-// import { stafArr } from "./imports";
 
 let stafArr = [
   {
@@ -52,10 +49,9 @@ let stafArr = [
     price: 302,
     img1: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_8337_1800x1800.png?v=1645871180",
     img2: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_8338_1800x1800.png?v=1645871181",
-    img3: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_8339_500x.png?v=1645871181",
-    img4: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_8341_500x.png?v=1645871182",
-    img5: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_8342_500x.png?v=1645871181",
-    img6: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_8343_500x.png?v=1645871181",
+    img3: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_8341_500x.png?v=1645871182",
+    img4: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_8342_500x.png?v=1645871181",
+    img5: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_8343_500x.png?v=1645871181",
     info: "Vintage 1990s Versace Jeans Couture Velour Long sleeve dress with all over gold/yellow/black print, incredible item in person, big zipper to back, would be great if altered to fit to a perfect size.",
     parametrs: '18" Pit to pit - 15" Waist - 34" Length - 18" Armpit to cuff',
   },
