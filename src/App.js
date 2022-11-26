@@ -4,10 +4,11 @@ import HomePage from "./Cards/HomePage";
 import Shop from "./Cards/Shop";
 import Unit from "./Cards/Unit";
 
-let stafArr = [
+export let stafArr = [
   {
     id: 1,
-    categoria: "Accessories",
+    categoria: ["Accessories", "All"],
+    another: "All",
     name: "Vintage Louis Vuitton Monogram Fold Purse",
     actual: "In Stock",
     price: 85,
@@ -18,7 +19,8 @@ let stafArr = [
   },
   {
     id: 2,
-    categoria: "Bags",
+    categoria: ["Bags", "All"],
+    another: "All",
     name: "Vintage 90s Tommy Hilfiger Big Flag Backpack",
     actual: "In Stock",
     price: 31,
@@ -29,7 +31,8 @@ let stafArr = [
   },
   {
     id: 3,
-    categoria: "Bottoms",
+    categoria: ["Bottoms", "All"],
+    another: "All",
     name: "Dark Denim End X Levi's 505 Regular Selvedge Jeans ",
     actual: "In Stock",
     price: 121,
@@ -43,7 +46,8 @@ let stafArr = [
   },
   {
     id: 4,
-    categoria: "Dresses",
+    categoria: ["Dresses", "All"],
+    another: "All",
     name: "Vintage 1990s Versace Jeans Couture Velour Long Sleeve Dress",
     actual: "In Stock",
     price: 302,
@@ -57,7 +61,8 @@ let stafArr = [
   },
   {
     id: 5,
-    categoria: "Fleeces",
+    categoria: ["Fleeces", "All"],
+    another: "All",
     name: "Vintage Womens Blue Reebok Fitness Fleece Jacket",
     actual: "In Stock",
     price: 31,
@@ -70,7 +75,8 @@ let stafArr = [
   },
   {
     id: 6,
-    categoria: "Gilets",
+    categoria: ["Gilets", "All"],
+    another: "All",
     name: "Vintage Dark Grey Kangol Puffer Gilet",
     actual: "In Stock",
     price: 43,
@@ -83,7 +89,8 @@ let stafArr = [
   },
   {
     id: 7,
-    categoria: "Hats",
+    categoria: ["Hats", "All"],
+    another: "All",
     name: "Vintage 90s Navy Polo Sport Youth Bucket Hat",
     actual: "In Stock",
     price: 19,
@@ -95,7 +102,8 @@ let stafArr = [
   },
   {
     id: 8,
-    categoria: "Jackets",
+    categoria: ["Jackets", "All"],
+    another: "All",
     name: "Vintage 90s Adidas Planet Big Logo Track Jacket",
     actual: "In Stock",
     price: 43,
@@ -109,7 +117,8 @@ let stafArr = [
   },
   {
     id: 9,
-    categoria: "Polo Shirts",
+    categoria: ["Polo", "All"],
+    another: "All",
     name: "Vintage 90s Nike Jordan Abstract Print L/S Polo Shirt",
     actual: "In Stock",
     price: 181,
@@ -122,7 +131,8 @@ let stafArr = [
   },
   {
     id: 10,
-    categoria: "Quater Zips",
+    categoria: ["Zips", "All"],
+    another: "All",
     name: "Vintage 90s Orange Polo Sport Hooded Poncho",
     actual: "In Stock",
     price: 49,
@@ -135,7 +145,8 @@ let stafArr = [
   },
   {
     id: 11,
-    categoria: "Scarfs",
+    categoria: ["Scarfs", "All"],
+    another: "All",
     name: "Vintage Tweed Burberry Nova Check Cashmere Scarf",
     actual: "In Stock",
     price: 55,
@@ -145,7 +156,8 @@ let stafArr = [
   },
   {
     id: 12,
-    categoria: "Shirts",
+    categoria: ["Shirts", "All"],
+    another: "All",
     name: "Vintage Tan Burberry Nova Check L/S Shirt",
     actual: "In Stock",
     price: 103,
@@ -157,7 +169,8 @@ let stafArr = [
   },
   {
     id: 13,
-    categoria: "Shoes",
+    categoria: ["Shoes", "All"],
+    another: "All",
     name: "Nike Air Jordan 1 OG Handcrafted DSWT UK8",
     actual: "In Stock",
     price: 206,
@@ -171,7 +184,8 @@ let stafArr = [
   },
   {
     id: 14,
-    categoria: "Sweatshirts",
+    categoria: ["Sweatshirts", "All"],
+    another: "All",
     name: "Baby Blue Ralph Lauren Hoody",
     actual: "In Stock",
     price: 33,
@@ -183,7 +197,8 @@ let stafArr = [
   },
   {
     id: 15,
-    categoria: "T-Shirts",
+    categoria: ["T-Shirts", "All"],
+    another: "All",
     name: "Vintage 1998 World Cup England Bully T-Shirt",
     actual: "In Stock",
     price: 43,
