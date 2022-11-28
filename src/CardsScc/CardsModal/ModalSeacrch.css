@@ -8,6 +8,7 @@
     opacity: 0;
     pointer-events: none;
     transition: 0.5s;
+    z-index: 2;
 }
 
 .modal.active{
@@ -19,6 +20,8 @@
     padding: 20px;
     background-color: white;
     width: 100vw;
+    z-index: 2;
+    padding-bottom: 40px;
 }
 
 .titleSearch{
@@ -28,10 +31,11 @@
 .inpSearch{
     width: 95%;
     height: 30px;
-    margin-top: 15px;
+    margin-top: 30px;
     border: none;
     border-bottom: 1px solid gray;
     outline: none;
+
 }
 
 .modalImg{
@@ -42,6 +46,7 @@
 }
 
 .mainModalBlocks{
+    margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 96%;
