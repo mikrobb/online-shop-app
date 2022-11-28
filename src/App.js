@@ -1,8 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import { HashRouter } from "react-router-dom";
-import HomePage from "./Cards/HomePage";
-import Shop from "./Cards/Shop";
-import Unit from "./Cards/Unit";
+import HomePage from "./CardsJs/HomePage";
+import Shop from "./CardsJs/Shop";
+import Unit from "./CardsJs/Unit";
+import Login from "./CardsJs/Login";
 
 export let stafArr = [
   {
@@ -217,6 +218,7 @@ function App() {
         <Route exact path="/" element={<HomePage />} />
         <Route path="/shop" element={<Shop stafArr={stafArr} />} />
         <Route path="/shop/:id" element={<Unit stafArr={stafArr} />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </HashRouter>
   );
