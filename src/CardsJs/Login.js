@@ -10,7 +10,9 @@ export default function Login() {
         <Header />
       </div>
 
-      <section></section>
+      <section>
+        <div></div>
+      </section>
       <Footer />
     </>
   );
