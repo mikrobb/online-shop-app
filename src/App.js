@@ -4,6 +4,7 @@ import HomePage from "./CardsJs/HomePage";
 import Shop from "./CardsJs/Shop";
 import Unit from "./CardsJs/Unit";
 import Login from "./CardsJs/Login";
+import Registration from "./CardsJs/Registration";
 
 export let stafArr = [
   {
@@ -172,15 +173,15 @@ export let stafArr = [
     id: 13,
     categoria: ["Shoes", "All"],
     another: "All",
-    name: "Nike Air Jordan 1 OG Handcrafted DSWT UK8",
+    name: "2013 Nike Zoom Hyperfuse Trainers UK8",
     actual: "In Stock",
-    price: 206,
-    img1: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_0957_1800x1800.jpg?v=1663357745",
-    img2: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_0958_500x.jpg?v=1663357746",
-    img3: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_0959_500x.jpg?v=1663357746",
-    img4: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_0960_500x.jpg?v=1663357746",
-    img5: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_0961_500x.jpg?v=1663357746",
-    info: "Nike Air Jordan 1 OG handcrafted DSWT, spare laces and OG box.",
+    price: 44,
+    img1: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_6716_1800x1800.png?v=1640360193",
+    img2: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_6717_500x.png?v=1640360193",
+    img3: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_6718_500x.png?v=1640360194",
+    img4: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_6719_500x.png?v=1640360194",
+    img5: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_6721_500x.png?v=1640360194",
+    info: "2013 White Nike Zoom Hyperfuse trainers, great condition with two small flaws to ankle as shown.",
     parametrs: "Uk 8",
   },
   {
@@ -209,6 +210,33 @@ export let stafArr = [
     info: "Vintage 1998 World Cup England Beware of the Bulldog t-shirt.",
     parametrs: '22" Pit to pit - 28" Collar to hem',
   },
+  {
+    id: 16,
+    categoria: ["T-Shirts", "All"],
+    another: "All",
+    name: "Vintage White Aquascutum House Check T-Shirt",
+    actual: "In Stock",
+    price: 38,
+    img1: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_1513_1800x1800.jpg?v=1668454462",
+    img2: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_1514_500x.jpg?v=1668454461",
+    img3: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_1515_500x.jpg?v=1668454462",
+    info: "Vintage White Aquascutum House Check T-shirt.",
+    parametrs: '20" Pit to pit - 27" Collar to hem',
+  },
+  {
+    id: 17,
+    categoria: ["T-Shirts", "All"],
+    another: "All",
+    name: "Vintage 90s Grey Hard Rock Cafe Bangkok T-Shirt",
+    actual: "In Stock",
+    price: 31,
+    img1: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_1525_1800x1800.jpg?v=1668453541",
+    img2: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_1522_500x.jpg?v=1668453541",
+    img3: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_1524_500x.jpg?v=1668453541",
+    img4: "https://cdn.shopify.com/s/files/1/1817/7775/products/IMG_1526_500x.jpg?v=1668453548",
+    info: "Vintage 1998 World Cup England Beware of the Bulldog t-shirt.",
+    parametrs: '22" Pit to pit - 28" Collar to hem',
+  },
 ];
 
 function App() {
@@ -219,6 +247,7 @@ function App() {
         <Route path="/shop" element={<Shop stafArr={stafArr} />} />
         <Route path="/shop/:id" element={<Unit stafArr={stafArr} />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
       </Routes>
     </HashRouter>
   );

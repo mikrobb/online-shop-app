@@ -27,46 +27,70 @@ export default function HomePage() {
       <section className="Section_Blocks_Sale">
         <div className="Block_Sale">
           <div className="Block_Img">
-            <img
-              src={block1}
-              alt="Adidas Planet Big Logo"
-              className="Block_Sale_Img"
-            />
+            <Link to="/shop/8" className="nameLink">
+              <img
+                src={block1}
+                alt="Adidas Planet Big Logo"
+                className="Block_Sale_Img"
+              />
+            </Link>
           </div>
-          <span>Vintage 90s Adidas Planet Big Logo Track Jacket</span>
+          <span>
+            <Link to="/shop/8" className="nameLink">
+              Vintage 90s Adidas Planet Big Logo Track Jacket
+            </Link>
+          </span>
           <span className="Price_Sale">$43.00</span>
         </div>
         <div className="Block_Sale">
           <div className="Block_Img">
-            <img
-              src={block2}
-              alt="Aquascutum House Check T-Shirt"
-              className="Block_Sale_Img"
-            />
+            <Link to="/shop/16" className="nameLink">
+              <img
+                src={block2}
+                alt="Aquascutum House Check T-Shirt"
+                className="Block_Sale_Img"
+              />
+            </Link>
           </div>
-          <span>Vintage White Aquascutum House Check T-Shirt</span>
+          <span>
+            <Link to="/shop/16" className="nameLink">
+              Vintage White Aquascutum House Check T-Shirt
+            </Link>
+          </span>
           <span className="Price_Sale">$37.00</span>
         </div>
         <div className="Block_Sale">
           <div className="Block_Img">
-            <img
-              src={block4}
-              alt="World Cup 1998 England Bully"
-              className="Block_Sale_Img"
-            />
+            <Link to="/shop/15" className="nameLink">
+              <img
+                src={block4}
+                alt="World Cup 1998 England Bully"
+                className="Block_Sale_Img"
+              />
+            </Link>
           </div>
-          <span>Vintage 1998 World Cup England Bully T-Shirt</span>
+          <span>
+            <Link to="/shop/15" className="nameLink">
+              Vintage 1998 World Cup England Bully T-Shirt
+            </Link>
+          </span>
           <span className="Price_Sale">$43.00</span>
         </div>
         <div className="Block_Sale">
           <div className="Block_Img">
-            <img
-              src={block5}
-              alt="Grey Hard Rock Cafe Bangkok"
-              className="Block_Sale_Img"
-            />
+            <Link to="/shop/17" className="nameLink">
+              <img
+                src={block5}
+                alt="Grey Hard Rock Cafe Bangkok"
+                className="Block_Sale_Img"
+              />
+            </Link>
           </div>
-          <span>Vintage 90s Grey Hard Rock Cafe Bangkok T-Shirt</span>
+          <span>
+            <Link to="/shop/17" className="nameLink">
+              Vintage 90s Grey Hard Rock Cafe Bangkok T-Shirt
+            </Link>
+          </span>
           <span className="Price_Sale">$31.00</span>
         </div>
       </section>

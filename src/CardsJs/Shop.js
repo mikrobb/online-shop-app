@@ -264,7 +264,9 @@ export default function Shop(stafArr) {
                 )
                 .map((unit) => (
                   <div className="unitBlock">
-                    <img src={unit.img1} alt="" />
+                    <Link className="blackLinks" to={`/shop/${unit.id}`}>
+                      <img src={unit.img1} alt="" />
+                    </Link>
                     <span className="nameProduct">
                       <Link className="blackLinks" to={`/shop/${unit.id}`}>
                         {unit.name}
