@@ -134,3 +134,9 @@
     color: gray;
     transition-duration: 0.2s;
 }
+
+.nameLink{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
