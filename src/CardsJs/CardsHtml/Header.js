@@ -3,13 +3,19 @@ import { Link } from "react-router-dom";
 import "C:/Users/Mikrob/Desktop/Online shop project/streetwear-shop-appnpx/src/CardsScc/CadrsSccHtml/Header.css";
 import { useState } from "react";
 import ModalSearch from "../CardsModal/ModalSearch";
+import ModalCart from "../CardsModal/ModalCart";
 
 export default function Header() {
-  const [modalActive, setModalActive] = useState();
+  const [modalSearchActive, setModalSearchActive] = useState();
+  const [modalCartActive, setModalCartActive] = useState();
 
   return (
     <>
-      <ModalSearch active={modalActive} setActive={setModalActive} />
+      <ModalSearch
+        active={modalSearchActive}
+        setActive={setModalSearchActive}
+      />
+      <ModalCart active={modalCartActive} setActive={setModalCartActive} />
       <div className="Header_main_block">
         <div className="Header_block">
           <Link className="links" to="/">
@@ -27,10 +33,12 @@ export default function Header() {
         </div>
         <div className="Header_block">
           <div className="Header_span">
-            <span onClick={() => setModalActive(true)}>SEARCH</span>
+            <span onClick={() => setModalSearchActive(true)}>SEARCH</span>
           </div>
           <div className="Header_span">ACCOUNT</div>
-          <div className="Header_span">YOUR CART</div>
+          <div className="Header_span">
+            <span onClick={() => setModalCartActive(true)}>YOUR CART</span>
+          </div>
         </div>
       </div>
     </>
