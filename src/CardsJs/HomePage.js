@@ -12,7 +12,7 @@ import block6 from "../img/Block6.png";
 import Header from "./CardsHtml/Header";
 import Footer from "./CardsHtml/Footer";
 
-export default function HomePage() {
+export default function HomePage({ getFromLocalStorage, setToLocalStorage }) {
   return (
     <>
       <header className="Slider_block">

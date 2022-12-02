@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 export default function ModalSearch({ active, setActive }) {
   const [search, setSeacrh] = useState("none");
-  console.log(search);
 
   return (
     <div
