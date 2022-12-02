@@ -65,6 +65,9 @@ margin: auto;
 
 .addBtn{
     border: 1px solid #4b4b4b;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
     height: 40px;
     display: flex;
     align-items: center;

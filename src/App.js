@@ -5,6 +5,9 @@ import Shop from "./CardsJs/Shop";
 import Unit from "./CardsJs/Unit";
 import Login from "./CardsJs/Login";
 import Registration from "./CardsJs/Registration";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { setCartFavArr } from "./Store/reposReducer";
 
 export let stafArr = [
   {
@@ -239,13 +242,46 @@ export let stafArr = [
   },
 ];
 
+function setToLocalStorage(key, value) {
+  return localStorage.setItem(key, JSON.stringify(value));
+}
+
+function getFromLocalStorage(key) {
+  return JSON.parse(localStorage.getItem(key));
+}
+
 function App() {
+  const cartFavArr = useSelector((state) => state.repos.cartFavArr);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(setCartFavArr(getFromLocalStorage("cartArr")));
+  }, [cartFavArr]);
+
   return (
     <HashRouter>
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
+        <Route
+          exact
+          path="/"
+          element={
+            <HomePage
+              getFromLocalStorage={getFromLocalStorage}
+              setToLocalStorage={setToLocalStorage}
+            />
+          }
+        />
         <Route path="/shop" element={<Shop stafArr={stafArr} />} />
-        <Route path="/shop/:id" element={<Unit stafArr={stafArr} />} />
+        <Route
+          path="/shop/:id"
+          element={
+            <Unit
+              setToLocalStorage={setToLocalStorage}
+              getFromLocalStorage={getFromLocalStorage}
+              stafArr={stafArr}
+            />
+          }
+        />
         <Route path="/login" element={<Login />} />
         <Route path="/registration" element={<Registration />} />
       </Routes>
