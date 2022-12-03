@@ -43,7 +43,6 @@ margin: auto;
 
 .unitName{
     font-size: 25px;
-    /* font-family: 'PT Sans', sans-serif; */
 }
 
 .inStock{
@@ -60,7 +59,7 @@ margin: auto;
 
 .Tax{
     font-size: 15px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Anek Devanagari', sans-serif;
 }
 
 .addBtn{
@@ -102,7 +101,7 @@ margin: auto;
 .allInfoBlock{
     border-top: 1px solid gray;
     padding-top: 20px;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Anek Devanagari', sans-serif;
     font-size: 17px;
 }
 

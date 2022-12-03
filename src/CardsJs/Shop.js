@@ -272,7 +272,7 @@ export default function Shop(stafArr) {
                         {unit.name}
                       </Link>
                     </span>
-                    <span className="priceProduct">$ {unit.price}</span>
+                    <span className="priceProduct">${unit.price}.00</span>
                   </div>
                 ))}
             </div>
