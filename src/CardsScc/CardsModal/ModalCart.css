@@ -28,3 +28,99 @@
     z-index: 2;
     padding-bottom: 40px;
 }
+
+.cartMainBlocks{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgCart{
+    width: 100px;
+    border: 1px solid black;
+}
+.cartInfoBlock{
+    margin-left: 15px;
+}
+
+.cartName{
+    font-size: 16px;
+    font-family: 'Anek Devanagari', sans-serif;
+    margin-bottom: 10px;
+}
+
+.cartPrice{
+    font-size: 18px;
+    font-family: 'Anek Devanagari', sans-serif;
+}
+
+.cartPticeDelete{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btnDelete{
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    padding: 5px;
+    width: 70px;
+    text-align: center;
+}
+
+.btnDelete:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.mainTotalCount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.descrip{
+    font-size: 18px;
+    font-family: 'Anek Devanagari', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+}
+
+.btnBuy{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+.btnBuy:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.display{
+    display: none;
+}
+.displayBlock{
+    display: block;
+}
+
+.displayText{
+    display: none;
+}
+.displayBlockText{
+    display: block;
+    font-family: 'Anek Devanagari', sans-serif;
+}

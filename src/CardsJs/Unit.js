@@ -11,6 +11,7 @@ export default function Unit({
   setToLocalStorage,
   getFromLocalStorage,
   stafArr,
+  cartFavArr,
 }) {
   const { id } = useParams();
   const unitObj = stafArr.filter(function (arr) {
@@ -18,25 +19,21 @@ export default function Unit({
   });
   const [view, setView] = useState("");
   const dispatch = useDispatch();
-  const cartFavArr = useSelector((state) => state.repos.cartFavArr);
 
   function addToCart(unit) {
-    if (cartFavArr.includes(unit)) {
+    if (cartFavArr.includes(unit.name)) {
       const newArray = cartFavArr.filter((item) => {
-        return item.id !== unit.id;
+        return item !== unit.name;
       });
       dispatch(setCartFavArr(newArray));
       setToLocalStorage("cartArr", newArray);
     } else {
       const newArray = [...cartFavArr];
-      newArray.push(unit);
+      newArray.push(unit.name);
       dispatch(setCartFavArr(newArray));
       setToLocalStorage("cartArr", newArray);
     }
   }
-
-  console.log(cartFavArr);
-  console.log(cartFavArr.includes(stafArr[0]));
 
   return (
     <>
@@ -103,12 +100,17 @@ export default function Unit({
               <div className="unitInfo">
                 <div className="unitName">{info.name}</div>
                 <div className="inStock">In Stock</div>
-                <div className="unitPrice">$ {info.price}.00</div>
+                <div className="unitPrice">${info.price}.00</div>
                 <div className="Tax">Tax included</div>
-                <button onClick={() => addToCart(info)} className="addBtn">
-                  {cartFavArr.includes(info)
+                <button
+                  // disabled={cartFavArr.includes(info)}
+                  onClick={() => addToCart(info)}
+                  className="addBtn"
+                >
+                  {cartFavArr.includes(info.name)
                     ? "Delete from cart"
                     : "Add to cart"}
+                  {/* Add to cart */}
                 </button>
               </div>
             </div>

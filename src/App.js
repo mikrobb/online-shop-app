@@ -254,23 +254,14 @@ function App() {
   const cartFavArr = useSelector((state) => state.repos.cartFavArr);
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(setCartFavArr(getFromLocalStorage("cartArr")));
-  }, [cartFavArr]);
+  if (!getFromLocalStorage("cartArr")) {
+    setToLocalStorage("cartArr", []);
+  }
 
   return (
     <HashRouter>
       <Routes>
-        <Route
-          exact
-          path="/"
-          element={
-            <HomePage
-              getFromLocalStorage={getFromLocalStorage}
-              setToLocalStorage={setToLocalStorage}
-            />
-          }
-        />
+        <Route exact path="/" element={<HomePage />} />
         <Route path="/shop" element={<Shop stafArr={stafArr} />} />
         <Route
           path="/shop/:id"
@@ -279,6 +270,7 @@ function App() {
               setToLocalStorage={setToLocalStorage}
               getFromLocalStorage={getFromLocalStorage}
               stafArr={stafArr}
+              cartFavArr={cartFavArr}
             />
           }
         />
