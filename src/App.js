@@ -4,7 +4,6 @@ import HomePage from "./CardsJs/HomePage";
 import Shop from "./CardsJs/Shop";
 import Unit from "./CardsJs/Unit";
 import Login from "./CardsJs/Login";
-import Registration from "./CardsJs/Registration";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setCartFavArr } from "./Store/reposReducer";
@@ -275,7 +274,6 @@ function App() {
           }
         />
         <Route path="/login" element={<Login />} />
-        <Route path="/registration" element={<Registration />} />
       </Routes>
     </HashRouter>
   );

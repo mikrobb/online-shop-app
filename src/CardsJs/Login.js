@@ -16,6 +16,8 @@ export default function Login() {
   );
   const [formValid, setFormValid] = useState(false);
 
+  console.log(password);
+
   useEffect(() => {
     if (emailError || passwordError) {
       setFormValid(false);
@@ -108,7 +110,9 @@ export default function Login() {
                 />
               </div>
               <div className="loginBtn">
-                <button disabled={!formValid}>SIGN IN</button>
+                <Link to="/">
+                  <button disabled={!formValid}>SIGN IN</button>
+                </Link>
               </div>
               <div className="forgotPass">
                 <span className="forgotBtn">Forgot your password?</span>
@@ -124,9 +128,7 @@ export default function Login() {
                 For this will only ask you for information necessary to make the
                 purchase process faster and easier
               </div>
-              <Link to="/registration" className="loginLink">
-                <div className="regBtn">CREATE AN ACCOUNT</div>
-              </Link>
+              <div className="regBtn">CREATE AN ACCOUNT</div>
             </div>
           </div>
         </div>
