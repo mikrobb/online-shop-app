@@ -118,7 +118,7 @@ export default function Unit({
         </div>
         <div className="aboutBlock">
           {unitObj.map((info) => (
-            <>
+            <div key={info.id}>
               <div className="delailsBlock">PRODUCT DETAILS</div>
               <div className="allInfoBlock">
                 <div className="aboutUnit">{info.info}</div>
@@ -135,7 +135,7 @@ export default function Unit({
                   please contact us.
                 </div>
               </div>
-            </>
+            </div>
           ))}
         </div>
         <div>

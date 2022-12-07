@@ -4,6 +4,7 @@ import HomePage from "./CardsJs/HomePage";
 import Shop from "./CardsJs/Shop";
 import Unit from "./CardsJs/Unit";
 import Login from "./CardsJs/Login";
+import Account from "./CardsJs/Account";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setCartFavArr } from "./Store/reposReducer";
@@ -256,6 +257,12 @@ function App() {
   if (!getFromLocalStorage("cartArr")) {
     setToLocalStorage("cartArr", []);
   }
+  if (!getFromLocalStorage("login")) {
+    setToLocalStorage("login", null);
+  }
+  if (!getFromLocalStorage("password")) {
+    setToLocalStorage("password", null);
+  }
 
   return (
     <HashRouter>
@@ -274,6 +281,7 @@ function App() {
           }
         />
         <Route path="/login" element={<Login />} />
+        <Route path="/account" element={<Account />} />
       </Routes>
     </HashRouter>
   );

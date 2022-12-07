@@ -29,7 +29,7 @@ export default function ModalSearch({ active, setActive }) {
                 unit.name.toLowerCase().includes(search.toLowerCase())
               )
               .map((unit) => (
-                <div className="modalBlock">
+                <div key={unit.id} className="modalBlock">
                   <div>
                     <img className="modalImg" src={unit.img1} alt="" />
                   </div>

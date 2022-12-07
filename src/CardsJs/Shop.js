@@ -263,7 +263,7 @@ export default function Shop(stafArr) {
                     categoria.categoria[1] == checked
                 )
                 .map((unit) => (
-                  <div className="unitBlock">
+                  <div key={unit.id} className="unitBlock">
                     <Link className="blackLinks" to={`/shop/${unit.id}`}>
                       <img src={unit.img1} alt="" />
                     </Link>

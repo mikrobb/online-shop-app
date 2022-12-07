@@ -8,8 +8,8 @@ function getFromLocalStorage(key) {
 
 const defaultState = {
   cartFavArr: getFromLocalStorage("cartArr") || [],
-  login: "",
-  password: "",
+  login: getFromLocalStorage("login") || null,
+  password: getFromLocalStorage("password") || null,
 };
 
 export default function reposReducer(state = defaultState, action) {
@@ -35,7 +35,7 @@ export const setLogin = (login) => ({
   payload: login,
 });
 
-export const setPassword = (password) => ({
+export const setPasswordState = (password) => ({
   type: SET_PASSWORD,
   payload: password,
 });
