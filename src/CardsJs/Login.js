@@ -4,6 +4,17 @@ import Footer from "./CardsHtml/Footer";
 import "../CardsScc/Login.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { setLogin } from "../Store/reposReducer";
+import { setPasswordState } from "../Store/reposReducer";
+
+function setToLocalStorage(key, value) {
+  return localStorage.setItem(key, JSON.stringify(value));
+}
+
+function getFromLocalStorage(key) {
+  return JSON.parse(localStorage.getItem(key));
+}
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -15,8 +26,19 @@ export default function Login() {
     "Password cannot be empty"
   );
   const [formValid, setFormValid] = useState(false);
+  const dispatch = useDispatch();
+  const loginState = useSelector((state) => state.repos.login);
+  const passwordState = useSelector((state) => state.repos.password);
 
-  console.log(password);
+  function loginFunc() {
+    dispatch(setLogin(email));
+    setToLocalStorage("login", email);
+    dispatch(setPasswordState(password));
+    setToLocalStorage("password", password);
+  }
+
+  console.log(loginState);
+  console.log(passwordState);
 
   useEffect(() => {
     if (emailError || passwordError) {
@@ -111,7 +133,9 @@ export default function Login() {
               </div>
               <div className="loginBtn">
                 <Link to="/">
-                  <button disabled={!formValid}>SIGN IN</button>
+                  <button onClick={() => loginFunc()} disabled={!formValid}>
+                    SIGN IN
+                  </button>
                 </Link>
               </div>
               <div className="forgotPass">

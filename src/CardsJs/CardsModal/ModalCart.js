@@ -59,7 +59,7 @@ export default function ModalCart({ active, setActive }) {
           </div>
           <div>
             {cartArrays.map((unit) => (
-              <>
+              <div key={unit.id}>
                 <div className="cartMainBlocks">
                   <div>
                     <img className="imgCart" src={unit.img1} alt="" />
@@ -78,7 +78,7 @@ export default function ModalCart({ active, setActive }) {
                   </div>
                 </div>
                 <hr />
-              </>
+              </div>
             ))}
             <div className={!cartArrays[0] ? "display" : "displayBlock"}>
               <div className="mainTotalCount">

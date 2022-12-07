@@ -1,0 +1,35 @@
+.ShopHeader{
+    background-color: #4b4b4b;
+}
+
+.accountTitle{
+    text-align: center;
+    margin-top: 70px;
+    font-size: 25px;
+}
+
+.ordersBlocks{
+    /* margin-left: 23px; */
+    margin-left: 23px;
+    margin-right: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order_history{
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.order_descrip{
+    font-size: 17px;
+    font-family: 'Anek Devanagari', sans-serif;
+}
+
+.accountBlock{
+    border-left: 1px solid gray;
+    padding-left: 30px;
+}
