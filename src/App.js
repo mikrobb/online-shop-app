@@ -5,9 +5,7 @@ import Shop from "./CardsJs/Shop";
 import Unit from "./CardsJs/Unit";
 import Login from "./CardsJs/Login";
 import Account from "./CardsJs/Account";
-import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { setCartFavArr } from "./Store/reposReducer";
 
 export let stafArr = [
   {
