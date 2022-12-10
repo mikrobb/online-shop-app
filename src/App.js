@@ -250,7 +250,6 @@ function getFromLocalStorage(key) {
 
 function App() {
   const cartFavArr = useSelector((state) => state.repos.cartFavArr);
-  const dispatch = useDispatch();
 
   if (!getFromLocalStorage("cartArr")) {
     setToLocalStorage("cartArr", []);

@@ -1,5 +1,5 @@
 .ShopHeader{
-    background-color: #4b4b4b;
+    background-color: #130f40;
 }
 
 .mainSectionBlocks{
@@ -33,7 +33,7 @@
     -moz-appearance: none;
     appearance: none;
   
-    border-radius: 50%;
+    border-radius: 0%;
     width: 16px;
     height: 16px;
   
@@ -66,12 +66,13 @@
     margin-left: 15px;
     margin-bottom: 80px;
     font-family: 'Anek Devanagari', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-size: 18px;
 }
 
 .unitBlock img {
     width: 300px;
-    border: 1px solid black;
+    border: 1px solid rgb(218, 191, 191);
     /* border-radius: 15px; */
 }
 
@@ -84,7 +85,8 @@
 
 
 .priceProduct{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-size: 22px;
 }
 
 
@@ -96,4 +98,22 @@
 .blackLinks:hover{
     color: gray;
     transition: 0.2s;
+}
+
+.pages {
+    margin: 20px 0px;
+}
+.page{
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+.current-page{
+    border: 2px solid lightgray;
+    padding: 5px 15px;
+    margin: 0 10px;
+    cursor: pointer;
 }
