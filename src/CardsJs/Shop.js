@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./CardsHtml/Header";
 import Footer from "./CardsHtml/Footer";
 import "../CardsScc/Shop.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setCurrentPage } from "../Store/reposReducer";
 
 export default function Shop(stafArr) {
   const [checked, setChecked] = useState("All");
+  const currentPage = useSelector((state) => state.repos.currentPage);
+  const perPage = useSelector((state) => state.repos.perPage);
+  const totalCount = useSelector((state) => state.repos.totalCount);
+  const dispatch = useDispatch();
+
+  const pages = [1, 2, 3, 4, 5];
 
   function isChecked(value) {
     setChecked(value);
     console.log(checked);
   }
+
+  // useEffect(() => {
+  //   dispatch(getRepos());
+  // }, [currentPage]);
 
   return (
     <>
@@ -34,12 +46,13 @@ export default function Shop(stafArr) {
                       type="radio"
                       name="categoria"
                       id="All"
+                      checked={checked == "All"}
                     />
                     <label
                       onClick={(event) => isChecked(event.target.for)}
                       for="All"
                     >
-                      Shop-All
+                      All Shop
                     </label>
                   </div>
                   <div className="inpBlock">
@@ -276,6 +289,19 @@ export default function Shop(stafArr) {
                   </div>
                 ))}
             </div>
+          </div>
+          <div className="pages">
+            {pages.map((page, index) => (
+              <>
+                <span
+                  onClick={() => dispatch(setCurrentPage(page))}
+                  className={currentPage == page ? "current-page" : "page"}
+                  key={index}
+                >
+                  {page}
+                </span>
+              </>
+            ))}
           </div>
         </section>
         <Footer />
