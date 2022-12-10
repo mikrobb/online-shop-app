@@ -9,7 +9,7 @@ export default function Account() {
   const passwordState = useSelector((state) => state.repos.password);
   return (
     <>
-      <div className="ShopHeader">
+      <div className="shopHeader">
         <Header />
       </div>
 

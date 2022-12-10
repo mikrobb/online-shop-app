@@ -27,7 +27,7 @@ export default function Shop(stafArr) {
 
   return (
     <>
-      <div className="ShopHeader">
+      <div className="shopHeader">
         <Header />
       </div>
       <div className="margins">

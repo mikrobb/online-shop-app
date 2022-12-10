@@ -5,6 +5,8 @@ import { useState } from "react";
 import ModalSearch from "../CardsModal/ModalSearch";
 import ModalCart from "../CardsModal/ModalCart";
 import { useSelector } from "react-redux";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 function setToLocalStorage(key, value) {
   return localStorage.setItem(key, JSON.stringify(value));
@@ -14,8 +16,7 @@ export default function Header() {
   const [modalSearchActive, setModalSearchActive] = useState();
   const [modalCartActive, setModalCartActive] = useState();
   const loginState = useSelector((state) => state.repos.login);
-
-  console.log(loginState == null);
+  const cartFavArr = useSelector((state) => state.repos.cartFavArr);
 
   function logout() {
     setToLocalStorage("login", null);
@@ -55,15 +56,27 @@ export default function Header() {
         </div>
         <div className="Header_block">
           <div className="Header_span">
-            <span onClick={() => setModalSearchActive(true)}>SEARCH</span>
+            <FontAwesomeIcon
+              className="fontAwesomeIcons"
+              onClick={() => setModalSearchActive(true)}
+              icon={solid("magnifying-glass")}
+            />
           </div>
           <Link className="links" to="/account">
-            <div className={loginState == null ? "none" : "Header_span"}>
-              ACCOUNT
-            </div>
+            <FontAwesomeIcon
+              className={
+                loginState == null ? "none" : "Header_span fontAwesomeIcons"
+              }
+              icon={solid("user")}
+            />
           </Link>
           <div className="Header_span">
-            <span onClick={() => setModalCartActive(true)}>YOUR CART</span>
+            <FontAwesomeIcon
+              className="fontAwesomeIcons"
+              onClick={() => setModalCartActive(true)}
+              icon={solid("cart-shopping")}
+            />
+            <span className="countCartArr">{cartFavArr.length}</span>
           </div>
         </div>
       </div>

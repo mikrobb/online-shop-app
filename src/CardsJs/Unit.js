@@ -37,7 +37,7 @@ export default function Unit({
 
   return (
     <>
-      <div className="ShopHeader">
+      <div className="shopHeader">
         <Header />
       </div>
       <div className="margins">

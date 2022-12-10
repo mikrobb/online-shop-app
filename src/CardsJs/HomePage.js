@@ -99,29 +99,45 @@ export default function HomePage() {
       </Link>
       <div className="Slider_Block_Second"></div>
 
-      <section>
+      <section className="Categories_section">
         <div className="Categories_Blocks">
           <div className="Ctegoies_block">
             <div className="Block_Img">
-              <img src={block3} alt="Sweatshirts" className="Block_Sale_Img" />
+              <img
+                src={block3}
+                alt="Sweatshirts"
+                className="Block_Sale_Img Categoria_img"
+              />
             </div>
             <div className="Categoria">Sweatshirts</div>
           </div>
           <div className="Ctegoies_block">
             <div className="Block_Img">
-              <img src={block6} alt="Fleeces" className="Block_Sale_Img" />
+              <img
+                src={block6}
+                alt="Fleeces"
+                className="Block_Sale_Img Categoria_img"
+              />
             </div>
             <div className="Categoria">Fleeces</div>
           </div>
           <div className="Ctegoies_block">
             <div className="Block_Img">
-              <img src={block2} alt="T-Shirt" className="Block_Sale_Img" />
+              <img
+                src={block2}
+                alt="T-Shirt"
+                className="Block_Sale_Img Categoria_img"
+              />
             </div>
             <div className="Categoria">T-shirts</div>
           </div>
           <div className="Ctegoies_block">
             <div className="Block_Img">
-              <img src={block1} alt="Jacets" className="Block_Sale_Img" />
+              <img
+                src={block1}
+                alt="Jacets"
+                className="Block_Sale_Img Categoria_img"
+              />
             </div>
             <div className="Categoria">Jackets</div>
           </div>

@@ -140,3 +140,40 @@
     color: black;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1250px){
+    /* .Section_Blocks_Sale{
+        display: none;
+    }
+
+    .Categories_section{
+        display: none;
+    } */
+
+    .Section_Blocks_Sale{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Block_Sale{
+        margin: auto;
+    }
+
+    .Categories_Blocks{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .Ctegoies_block{
+        margin: auto;
+    }
+
+    .Categoria_img{
+        width: 280px;
+        height: 230px;
+    }
+
+    .Btn_shop{
+        margin-top: 500px;
+    }
+}

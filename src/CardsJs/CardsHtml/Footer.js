@@ -23,18 +23,6 @@ export default function Footer() {
   return (
     <>
       <hr />
-      {/* <h2 className="block_title">STAY CONNECTED</h2>
-      <div className="Connect_Main_Block">
-        <div className="SocialBlock">
-          <div className="btnSocial">SHOW FACEBOOK</div>
-          <img className="iconSocial Facebook" src={facebook} alt="" />
-        </div>
-        <div className="Border"></div>
-        <div className="Connect_Main_Block">
-          <img className="iconSocial" src={inst} alt="" />
-          <div className="btnSocial">SHOW INSTAGRAM</div>
-        </div>
-      </div> */}
       <div className="mainFooterBlocks">
         <div className="Newsletter">
           <div className="Newsletter_title">NEWSLETTER</div>

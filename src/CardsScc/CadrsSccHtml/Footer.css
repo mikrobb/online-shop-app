@@ -72,3 +72,9 @@
     color: gray;
     transition: 0.2s;
 }
+
+@media screen and (max-width: 1250px){
+   .mainFooterBlocks{
+    width: 90%;
+   }
+}
