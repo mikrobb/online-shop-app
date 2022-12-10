@@ -261,6 +261,8 @@ function App() {
     setToLocalStorage("password", null);
   }
 
+  console.log(stafArr);
+
   return (
     <HashRouter>
       <Routes>

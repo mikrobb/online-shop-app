@@ -76,3 +76,14 @@
     color: gray;
     transition: 0.4s;
 }
+
+@media screen and (max-width: 1250px){
+    .mainModalBlocks{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 850px){
+    .mainModalBlocks{
+        grid-template-columns: 1fr 1fr;
+    }
+}

@@ -86,7 +86,7 @@ export default function Login() {
 
   return (
     <>
-      <div className="ShopHeader">
+      <div className="shopHeader">
         <Header />
       </div>
 
