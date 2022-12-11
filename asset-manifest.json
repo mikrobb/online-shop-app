@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/online-shop-app/static/css/main.83b39d51.css",
+    "main.js": "/online-shop-app/static/js/main.bcce2659.js",
+    "static/js/787.97176d94.chunk.js": "/online-shop-app/static/js/787.97176d94.chunk.js",
+    "static/media/Slide3.webp": "/online-shop-app/static/media/Slide3.7ce1278f23c8d0d2f21d.webp",
+    "static/media/Slide1.jpg": "/online-shop-app/static/media/Slide1.f2bb91a639eea3d93c22.jpg",
+    "static/media/Block4.png": "/online-shop-app/static/media/Block4.57ab009a8adb5728e4e0.png",
+    "static/media/Block1.png": "/online-shop-app/static/media/Block1.5bca0202e1ba78f8b133.png",
+    "static/media/Block5.png": "/online-shop-app/static/media/Block5.e0c9fc70abbd0390473f.png",
+    "static/media/Block6.png": "/online-shop-app/static/media/Block6.21d84eb2fe4cd347be2d.png",
+    "static/media/Block3.png": "/online-shop-app/static/media/Block3.017a7c61b45846d42d50.png",
+    "static/media/Block2.png": "/online-shop-app/static/media/Block2.0cb7ce3a8f683dd70a23.png",
+    "static/media/instagram.png": "/online-shop-app/static/media/instagram.eaf86edb04166dbcf513.png",
+    "static/media/GooglePay.png": "/online-shop-app/static/media/GooglePay.d8ae155ce4703cb5290b.png",
+    "static/media/PayPal.png": "/online-shop-app/static/media/PayPal.10d9b5f518d180240928.png",
+    "static/media/ShopPay.png": "/online-shop-app/static/media/ShopPay.20047b258df4efc8726f.png",
+    "static/media/Etherium.png": "/online-shop-app/static/media/Etherium.68c49f03fbaadc9f81cc.png",
+    "static/media/AmazonPay.png": "/online-shop-app/static/media/AmazonPay.83f5272032d8750c4660.png",
+    "static/media/Discover.png": "/online-shop-app/static/media/Discover.a93b089083c939ce2795.png",
+    "static/media/DinersClub.png": "/online-shop-app/static/media/DinersClub.ee37dea8ab23cb0e0616.png",
+    "static/media/Bitcoin.png": "/online-shop-app/static/media/Bitcoin.befae8b34eea6f7472ff.png",
+    "static/media/Visa.png": "/online-shop-app/static/media/Visa.e3e5b2c860f1b3b9822b.png",
+    "static/media/Mastercard.png": "/online-shop-app/static/media/Mastercard.60135089507bae80cc1f.png",
+    "static/media/Amex.png": "/online-shop-app/static/media/Amex.fd23170b4a55a9fbd386.png",
+    "static/media/Stripe.png": "/online-shop-app/static/media/Stripe.56fe613aaf2960191270.png",
+    "static/media/ApplePay.png": "/online-shop-app/static/media/ApplePay.1d02c18de3adde570707.png",
+    "index.html": "/online-shop-app/index.html",
+    "main.83b39d51.css.map": "/online-shop-app/static/css/main.83b39d51.css.map",
+    "main.bcce2659.js.map": "/online-shop-app/static/js/main.bcce2659.js.map",
+    "787.97176d94.chunk.js.map": "/online-shop-app/static/js/787.97176d94.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83b39d51.css",
+    "static/js/main.bcce2659.js"
+  ]
+}
