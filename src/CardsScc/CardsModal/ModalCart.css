@@ -22,7 +22,6 @@
     right: 0;
     padding: 20px;
     background-color: white;
-    /* width: 100vw; */
     width: 300px;
     height: 100vh;
     z-index: 2;
@@ -126,3 +125,15 @@
     display: block;
     font-family: 'Anek Devanagari', sans-serif;
 }
+
+.TitleAndClose{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.closeIcon{
+    width: 30px;
+    cursor: pointer;
+}
+

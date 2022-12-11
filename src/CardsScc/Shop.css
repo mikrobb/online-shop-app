@@ -4,12 +4,13 @@
 
 .mainSectionBlocks{
     display: flex;
-    justify-content: space-between;   
+    justify-content: center;   
     margin-top: 40px;
 }
 
 .Categories{
     margin-left: 20px;
+    margin-right: 60px;
 }
 
 .titleBlock{
@@ -54,26 +55,24 @@
 .unitBlocks{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-    width: 80%;
 }
 
 .unitBlock{
+    width: 300px;
+    height: 300px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 85%;
     text-align: center;
     margin-left: 15px;
     margin-bottom: 80px;
     font-family: 'Anek Devanagari', sans-serif;
-    /* font-family: 'Poppins', sans-serif; */
     font-size: 18px;
 }
 
 .unitBlock img {
     width: 300px;
     border: 1px solid rgb(218, 191, 191);
-    /* border-radius: 15px; */
 }
 
 .nameProduct{
@@ -116,4 +115,42 @@
     padding: 5px 15px;
     margin: 0 10px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1250px){
+    .unitBlocks{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .unitBlocks{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .inpBlock label{
+        font-size: 12px;
+    }
+
+    .titleBlock{
+        font-size: 15px;
+    }
+
+    .unitBlock{
+        width: 180px;
+        margin-bottom: 20px;
+    }
+
+    .unitBlock img{
+        width: 170px;
+        
+    }
+    .Categories{
+        margin-right: 10px;
+    }
+    .nameProduct{
+        height:auto;
+    }
 }

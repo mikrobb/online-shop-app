@@ -18,8 +18,6 @@ margin: auto;
     margin-right: 15px;
     margin-bottom: 15px;
     border: 1px solid rgb(218, 191, 191);
-    /* border-radius: 15px; */
-
 }
 
 .blockImgBorder{
@@ -29,7 +27,6 @@ margin: auto;
 .blockMainImg{
     width: 500px;
     border: 1px solid rgb(218, 191, 191);
-    /* border-radius: 15px; */
 }
 
 .unitInfo{
@@ -111,4 +108,60 @@ margin: auto;
 .continuation{
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1250px){
+    .margins{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .blockMainImg{
+        width: 300px;
+    }
+
+    .unitName{
+        font-size: 20px;
+    }
+    .unitPrice{
+        font-size: 20px;
+    }
+
+    .addBtn{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .infoUnit{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ImgBlocks{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .photoBLocks{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .blockMainImg{
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 420px){
+    .blockMainImg{
+        width: 300px;
+    }
+    .blockImg{
+        width: 100px;
+    }
 }

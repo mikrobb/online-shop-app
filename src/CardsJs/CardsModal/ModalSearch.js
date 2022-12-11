@@ -3,6 +3,7 @@ import { useState } from "react";
 import "C:/Users/Mikrob/Desktop/Online shop project/streetwear-shop-appnpx/src/CardsScc/CardsModal/ModalSeacrch.css";
 import { stafArr } from "../../App";
 import { Link } from "react-router-dom";
+import close from "C:/Users/Mikrob/Desktop/Online shop project/streetwear-shop-appnpx/src/img/icons/close.png";
 
 export default function ModalSearch({ active, setActive }) {
   const [search, setSeacrh] = useState("none");
@@ -14,7 +15,11 @@ export default function ModalSearch({ active, setActive }) {
     >
       <div className="modal__content" onClick={(e) => e.stopPropagation()}>
         <div>
+          <div onClick={() => setActive(false)} className="closeBlockSearch">
+            <img className="closeIcon" src={close} alt="Close" />
+          </div>
           <div className="titleSearch">What are you looking for?</div>
+
           <div>
             <input
               onChange={(e) => setSeacrh(e.target.value)}

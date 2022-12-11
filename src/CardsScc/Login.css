@@ -83,7 +83,6 @@
     padding: 10px;
     width: 200px;
     text-align: center;
-    /* margin: auto; */
     color: white;
     background-color: black;
     margin-bottom: 10px;
@@ -116,4 +115,31 @@
 
 .loginLink{
     text-decoration: none;
+}
+
+@media screen and (max-width: 1000px){
+    .MainBlocks{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mainFooterBlocks{
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .loginMainBlock{
+        width: 300px;
+    }
+    .regMainBlock{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 400px){
+    .loginMainBlock{
+        width: 250px;
+    }
+    .regMainBlock{
+        width: 250px;
+    }
 }
