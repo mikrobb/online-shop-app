@@ -12,10 +12,6 @@ function setToLocalStorage(key, value) {
   return localStorage.setItem(key, JSON.stringify(value));
 }
 
-function getFromLocalStorage(key) {
-  return JSON.parse(localStorage.getItem(key));
-}
-
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

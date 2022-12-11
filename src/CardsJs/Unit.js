@@ -4,7 +4,7 @@ import Header from "./CardsHtml/Header";
 import { useParams } from "react-router";
 import Footer from "./CardsHtml/Footer";
 import "../CardsScc/Unit.css";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setCartFavArr } from "../Store/reposReducer";
 
 export default function Unit({
@@ -45,7 +45,7 @@ export default function Unit({
           {unitObj.map((info) => (
             <div className="infoUnit">
               <div className="ImgBlocks">
-                <div>
+                <div className="photoBLocks">
                   <div onClick={() => setView(info.img1)}>
                     <img
                       className={!info.img1 ? "blockImgBorder" : "blockImg"}
@@ -110,7 +110,6 @@ export default function Unit({
                   {cartFavArr.includes(info.name)
                     ? "Delete from cart"
                     : "Add to cart"}
-                  {/* Add to cart */}
                 </button>
               </div>
             </div>

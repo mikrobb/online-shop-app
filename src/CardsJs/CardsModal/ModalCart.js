@@ -1,10 +1,9 @@
 import React from "react";
-import { useState } from "react";
 import "C:/Users/Mikrob/Desktop/Online shop project/streetwear-shop-appnpx/src/CardsScc/CardsModal/ModalCart.css";
 import { stafArr } from "../../App";
-import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setCartFavArr } from "../../Store/reposReducer";
+import close from "C:/Users/Mikrob/Desktop/Online shop project/streetwear-shop-appnpx/src/img/icons/close.png";
 
 function setToLocalStorage(key, value) {
   return localStorage.setItem(key, JSON.stringify(value));
@@ -52,7 +51,13 @@ export default function ModalCart({ active, setActive }) {
           className="modalCart__content"
           onClick={(e) => e.stopPropagation()}
         >
-          <div>Your Cart</div>
+          <div className="TitleAndClose">
+            <div>Your Cart</div>
+            <div onClick={() => setActive(false)}>
+              <img className="closeIcon" src={close} alt="Close" />
+            </div>
+          </div>
+
           <hr />
           <div className={!cartArrays[0] ? "displayBlockText" : "displayText"}>
             You don't have any items in your cart.

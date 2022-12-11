@@ -5,8 +5,11 @@ import { useState } from "react";
 import ModalSearch from "../CardsModal/ModalSearch";
 import ModalCart from "../CardsModal/ModalCart";
 import { useSelector } from "react-redux";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import search from "C:/Users/Mikrob/Desktop/Online shop project/streetwear-shop-appnpx/src/img/icons/search.png";
+import user from "C:/Users/Mikrob/Desktop/Online shop project/streetwear-shop-appnpx/src/img/icons/user.png";
+import cart from "C:/Users/Mikrob/Desktop/Online shop project/streetwear-shop-appnpx/src/img/icons/cart.png";
+import menu from "C:/Users/Mikrob/Desktop/Online shop project/streetwear-shop-appnpx/src/img/icons/menu.png";
+import ModalMenu from "../CardsModal/ModalMenu";
 
 function setToLocalStorage(key, value) {
   return localStorage.setItem(key, JSON.stringify(value));
@@ -15,6 +18,7 @@ function setToLocalStorage(key, value) {
 export default function Header() {
   const [modalSearchActive, setModalSearchActive] = useState();
   const [modalCartActive, setModalCartActive] = useState();
+  const [modalMenuActive, setModalMenuActive] = useState();
   const loginState = useSelector((state) => state.repos.login);
   const cartFavArr = useSelector((state) => state.repos.cartFavArr);
 
@@ -31,8 +35,17 @@ export default function Header() {
         setActive={setModalSearchActive}
       />
       <ModalCart active={modalCartActive} setActive={setModalCartActive} />
+      <ModalMenu active={modalMenuActive} setActive={setModalMenuActive} />
       <div className="Header_main_block">
         <div className="Header_block">
+          <div className="Header_span modalMenuActive">
+            <img
+              onClick={() => setModalMenuActive(true)}
+              className="fontAwesomeIcons"
+              src={menu}
+              alt="Menu"
+            />
+          </div>
           <Link className="links" to="/">
             <div className="Header_span">HOME</div>
           </Link>
@@ -52,29 +65,38 @@ export default function Header() {
           </div>
         </div>
         <div className="Header_block">
-          <div className="Title_span">Mikrob's Vintage</div>
+          <Link className="links" to="/">
+            <div className="Title_span">Mikrob's Vintage</div>
+          </Link>
         </div>
-        <div className="Header_block">
-          <div className="Header_span">
-            <FontAwesomeIcon
+        <div className="Header_block iconsBlock">
+          <div className="Header_span_icon">
+            <img
               className="fontAwesomeIcons"
               onClick={() => setModalSearchActive(true)}
-              icon={solid("magnifying-glass")}
+              src={search}
+              alt="Search"
             />
           </div>
+
           <Link className="links" to="/account">
-            <FontAwesomeIcon
+            <img
               className={
-                loginState == null ? "none" : "Header_span fontAwesomeIcons"
+                loginState == null
+                  ? "none"
+                  : "Header_span_icon fontAwesomeIcons"
               }
-              icon={solid("user")}
+              src={user}
+              alt="Account"
             />
           </Link>
-          <div className="Header_span">
-            <FontAwesomeIcon
+
+          <div className="Header_span_icon">
+            <img
               className="fontAwesomeIcons"
               onClick={() => setModalCartActive(true)}
-              icon={solid("cart-shopping")}
+              src={cart}
+              alt="Cart"
             />
             <span className="countCartArr">{cartFavArr.length}</span>
           </div>

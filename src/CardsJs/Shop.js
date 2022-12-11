@@ -1,311 +1,284 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Header from "./CardsHtml/Header";
 import Footer from "./CardsHtml/Footer";
 import "../CardsScc/Shop.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { setCurrentPage } from "../Store/reposReducer";
 
 export default function Shop(stafArr) {
   const [checked, setChecked] = useState("All");
-  const currentPage = useSelector((state) => state.repos.currentPage);
-  const perPage = useSelector((state) => state.repos.perPage);
-  const totalCount = useSelector((state) => state.repos.totalCount);
-  const dispatch = useDispatch();
-
-  const pages = [1, 2, 3, 4, 5];
 
   function isChecked(value) {
     setChecked(value);
     console.log(checked);
   }
 
-  // useEffect(() => {
-  //   dispatch(getRepos());
-  // }, [currentPage]);
-
   return (
     <>
       <div className="shopHeader">
         <Header />
       </div>
-      <div className="margins">
-        <section>
-          <div className="mainSectionBlocks">
-            <div className="Categories">
-              <div className="titleBlock">Categories</div>
-              <div>
-                <form>
-                  <div
-                    style={{ marginBottom: "50px", marginTop: "50px" }}
-                    className="inpBlock"
-                  >
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="All"
-                      checked={checked == "All"}
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="All"
-                    >
-                      All Shop
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="Accessories"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="Accessories"
-                    >
-                      Accessories
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="Bags"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="Bags"
-                    >
-                      Bags
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="Bottoms"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="Bottoms"
-                    >
-                      Bottoms
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="Dresses"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="Dresses"
-                    >
-                      Dresses
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="Fleeces"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="Fleeces"
-                    >
-                      Fleeces
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="Gilets"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="Gilets"
-                    >
-                      Gilets
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="Hats"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="Hats"
-                    >
-                      Hats
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="Jackets"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="Jackets"
-                    >
-                      Jackets
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="Polo"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="Polo"
-                    >
-                      Polo Shirts
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="Zips"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="Zips"
-                    >
-                      Quater Zips
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="Scarfs"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="Scarfs"
-                    >
-                      Scarfs
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="Shirts"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="Shirts"
-                    >
-                      Shirts
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="Shoes"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="Shoes"
-                    >
-                      Shoes
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="Sweatshirts"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="Sweatshirts"
-                    >
-                      Sweatshirts
-                    </label>
-                  </div>
-                  <div className="inpBlock">
-                    <input
-                      onClick={(event) => isChecked(event.target.id)}
-                      type="radio"
-                      name="categoria"
-                      id="T-Shirts"
-                    />
-                    <label
-                      onClick={(event) => isChecked(event.target.for)}
-                      for="T-Shirts"
-                    >
-                      T-Shirts
-                    </label>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div className="unitBlocks">
-              {stafArr.stafArr
-                .filter(
-                  (categoria) =>
-                    categoria.categoria[0] == checked ||
-                    categoria.categoria[1] == checked
-                )
-                .map((unit) => (
-                  <div key={unit.id} className="unitBlock">
-                    <Link className="blackLinks" to={`/shop/${unit.id}`}>
-                      <img src={unit.img1} alt="" />
-                    </Link>
-                    <span className="nameProduct">
-                      <Link className="blackLinks" to={`/shop/${unit.id}`}>
-                        {unit.name}
-                      </Link>
-                    </span>
-                    <span className="priceProduct">${unit.price}.00</span>
-                  </div>
-                ))}
-            </div>
-          </div>
-          <div className="pages">
-            {pages.map((page, index) => (
-              <>
-                <span
-                  onClick={() => dispatch(setCurrentPage(page))}
-                  className={currentPage == page ? "current-page" : "page"}
-                  key={index}
+      <section>
+        <div className="mainSectionBlocks">
+          <div className="Categories">
+            <div className="titleBlock">Categories</div>
+            <div>
+              <form>
+                <div
+                  style={{ marginBottom: "50px", marginTop: "50px" }}
+                  className="inpBlock"
                 >
-                  {page}
-                </span>
-              </>
-            ))}
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="All"
+                    checked={checked === "All"}
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="All"
+                  >
+                    All Shop
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="Accessories"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="Accessories"
+                  >
+                    Accessories
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="Bags"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="Bags"
+                  >
+                    Bags
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="Bottoms"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="Bottoms"
+                  >
+                    Bottoms
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="Dresses"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="Dresses"
+                  >
+                    Dresses
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="Fleeces"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="Fleeces"
+                  >
+                    Fleeces
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="Gilets"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="Gilets"
+                  >
+                    Gilets
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="Hats"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="Hats"
+                  >
+                    Hats
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="Jackets"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="Jackets"
+                  >
+                    Jackets
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="Polo"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="Polo"
+                  >
+                    Polo Shirts
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="Zips"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="Zips"
+                  >
+                    Quater Zips
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="Scarfs"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="Scarfs"
+                  >
+                    Scarfs
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="Shirts"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="Shirts"
+                  >
+                    Shirts
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="Shoes"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="Shoes"
+                  >
+                    Shoes
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="Sweatshirts"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="Sweatshirts"
+                  >
+                    Sweatshirts
+                  </label>
+                </div>
+                <div className="inpBlock">
+                  <input
+                    onClick={(event) => isChecked(event.target.id)}
+                    type="radio"
+                    name="categoria"
+                    id="T-Shirts"
+                  />
+                  <label
+                    onClick={(event) => isChecked(event.target.for)}
+                    for="T-Shirts"
+                  >
+                    T-Shirts
+                  </label>
+                </div>
+              </form>
+            </div>
           </div>
-        </section>
-        <Footer />
-      </div>
+          <div className="unitBlocks">
+            {stafArr.stafArr
+              .filter(
+                (categoria) =>
+                  categoria.categoria[0] === checked ||
+                  categoria.categoria[1] === checked
+              )
+              .map((unit) => (
+                <div key={unit.id} className="unitBlock">
+                  <Link className="blackLinks" to={`/shop/${unit.id}`}>
+                    <img src={unit.img1} alt="" />
+                  </Link>
+                  <span className="nameProduct">
+                    <Link className="blackLinks" to={`/shop/${unit.id}`}>
+                      {unit.name}
+                    </Link>
+                  </span>
+                  <span className="priceProduct">${unit.price}.00</span>
+                </div>
+              ))}
+          </div>
+        </div>
+      </section>
+      <Footer />
     </>
   );
 }
